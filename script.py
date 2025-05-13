@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_csv("mock_sales.csv")
+df = pd.read_csv("Mock_Sales_Dataset.csv")
 
 # Total revenue by region
 region_revenue = df.groupby("Region")["Total Revenue"].sum().sort_values(ascending=False)
